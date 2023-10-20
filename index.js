@@ -16,8 +16,8 @@ const DOMSelectors = {
 function Enter () {
   DOMSelectors.box.insertAdjacentHTML("beforeend", 
   `<div class="entry">
-    <h3>${DOMSelectors.firstName.value} ${DOMSelectors.lastName.value}</h3>
-    <p>Height: ${DOMSelectors.height.value}</p>
+    <img src=${DOMSelectors.height.value} alt="Image" class="card-img">
+    <h1>${DOMSelectors.firstName.value} ${DOMSelectors.lastName.value}</h1>
     <button class="remove">Remove</button>
   </div>`);
 }
