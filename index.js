@@ -1,8 +1,8 @@
 const DOMSelectors = {
   form: document.querySelector("#form"),
-  firstName: document.querySelector(".first-name"),
-  lastName: document.querySelector(".last-name"),
-  height: document.querySelector(".height"),
+  albumName: document.querySelector(".album-name"),
+  artistName: document.querySelector(".artist-name"),
+  albumImage: document.querySelector(".album-image"),
   // h2: document.querySelectorAll("h2"),
   box: document.querySelector("#container-box"),
 }
@@ -16,8 +16,8 @@ const DOMSelectors = {
 function Enter () {
   DOMSelectors.box.insertAdjacentHTML("beforeend", 
   `<div class="entry">
-    <img src=${DOMSelectors.height.value} alt="Image" class="card-img">
-    <h1>${DOMSelectors.firstName.value} ${DOMSelectors.lastName.value}</h1>
+    <img src=${DOMSelectors.albumImage.value} alt="Image" class="card-img">
+    <h1>${DOMSelectors.albumName.value} ${DOMSelectors.artistName.value}</h1>
     <button class="remove">Remove</button>
   </div>`);
 }
@@ -32,9 +32,9 @@ function Remove () {
 }
 
 function Clear () {
-  DOMSelectors.firstName.value = "";
-  DOMSelectors.lastName.value = "";
-  DOMSelectors.height.value = "";
+  DOMSelectors.albumName.value = "";
+  DOMSelectors.artistName.value = "";
+  DOMSelectors.albumImage.value = "";
 }
 
 DOMSelectors.form.addEventListener("submit", function (event) {

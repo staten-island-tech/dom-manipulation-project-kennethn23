@@ -11,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 #submit {
@@ -24,17 +27,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.first-name {
+.album-name {
     border-radius: 30px;
     padding: 5px;
 }
 
-.last-name {
+.artist-name {
     border-radius: 30px;
     padding: 5px;
 }
 
-.height {
+.album-image {
     border-radius: 30px;
     padding: 5px;
 }
@@ -89,6 +92,14 @@ body {
 }
 
 .remove:hover{
+    transform: scale(1.15);
+}
+
+#submit {
+    transition: all 0.5s;
+}
+
+#submit:hover{
     transform: scale(1.15);
 }
 
