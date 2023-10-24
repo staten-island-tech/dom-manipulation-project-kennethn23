@@ -1,11 +1,10 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    background: linear-gradient(to bottom, #ffbd7f, #e4a863, #cc964f);
+    background: linear-gradient(to bottom, #a1e9ff, #48c5eb, #009fcf);
 }
 
 .input-form {
-    background-color: #e4a863;
     align-items: center;
     vertical-align: middle;
     display: flex;
@@ -14,17 +13,18 @@ body {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    background-color: rgba(56, 192, 255, 0.2);
 }
 
 #submit {
-    background-color: greenyellow;
-    border-width: 0;
+    background-color: #00ff00;
     border-radius: 30px;
     margin: 10px;
     padding: 10px;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 2px #12330a;
 }
 
 .album-name {
@@ -48,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 0, 0.2);
+    background-color: rgba(0, 238, 255, 0.2);
     justify-content: space-around;
     border-radius: 30px;
     vertical-align: middle;
@@ -56,9 +56,9 @@ body {
     text-align: center;
     padding: 10px;
     border-style: outset;
-    border-color: #ff8f33;
+    border-color: #00aeff;
     border-width: 0.7rem;
-    box-shadow: 5px 10px #331c0a;
+    box-shadow: 5px 10px #0a2933;
 }
 
 #container-box {
@@ -81,7 +81,6 @@ body {
 
 .remove {
     background-color: red;
-    border-width: 0;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -114,3 +113,4 @@ body {
         width: 100%;
     }
 }
+
