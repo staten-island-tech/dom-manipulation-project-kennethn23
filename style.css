@@ -4,6 +4,15 @@ body {
     background: linear-gradient(to bottom, #a1e9ff, #48c5eb, #009fcf);
 }
 
+.page-title {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: rgba(56, 192, 255, 0.5);
+    padding: 35px;
+    margin: 0;
+}
+
 .input-form {
     align-items: center;
     vertical-align: middle;
@@ -13,7 +22,7 @@ body {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    background-color: rgba(56, 192, 255, 0.2);
+    background-color: rgba(56, 192, 255, 0.5);
 }
 
 #submit {
@@ -27,17 +36,17 @@ body {
     box-shadow: 2px 2px #12330a;
 }
 
-.album-name {
+.agent-name {
     border-radius: 30px;
     padding: 5px;
 }
 
-.artist-name {
+.agent-type {
     border-radius: 30px;
     padding: 5px;
 }
 
-.album-image {
+.agent-image {
     border-radius: 30px;
     padding: 5px;
 }
@@ -59,6 +68,11 @@ body {
     border-color: #00aeff;
     border-width: 0.7rem;
     box-shadow: 5px 10px #0a2933;
+    font-family: 'Poppins', sans-serif;
+}
+
+.agent-name-card {
+    text-transform: uppercase;
 }
 
 #container-box {

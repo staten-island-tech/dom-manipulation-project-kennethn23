@@ -1,21 +1,22 @@
 const DOMSelectors = {
   form: document.querySelector("#form"),
-  albumName: document.querySelector(".album-name"),
-  artistName: document.querySelector(".artist-name"),
-  albumImage: document.querySelector(".album-image"),
+  agentName: document.querySelector(".agent-name"),
+  agentType: document.querySelector(".agent-type"),
+  agentImage: document.querySelector(".agent-image"),
   box: document.querySelector("#container-box"),
 }
 
-function Enter () {
+function insert () {
   DOMSelectors.box.insertAdjacentHTML("beforeend", 
   `<div class="entry">
-    <img src=${DOMSelectors.albumImage.value} alt="Image" class="card-img">
-    <h1>${DOMSelectors.albumName.value} ${DOMSelectors.artistName.value}</h1>
+    <img src=${DOMSelectors.agentImage.value} alt="Image" class="card-img">
+    <h1 class="agent-name-card">${DOMSelectors.agentName.value}</h1>
+    <h2>${DOMSelectors.agentType.value}</h2>
     <button class="remove">Remove</button>
   </div>`);
 }
 
-function Remove () {
+function remove () {
   const removeButtons = document.querySelectorAll(".remove");
   removeButtons.forEach((button) => {
     button.addEventListener("click", function (button) {
@@ -24,16 +25,15 @@ function Remove () {
   });
 }
 
-function Clear () {
-  DOMSelectors.albumName.value = "";
-  DOMSelectors.artistName.value = "";
-  DOMSelectors.albumImage.value = "";
+function clearInputs () {
+  DOMSelectors.agentName.value = "";
+  DOMSelectors.agentType.value = "";
+  DOMSelectors.agentImage.value = "";
 }
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
-  Enter();
-  Remove();
-  Clear();
+  insert();
+  remove();
+  clearInputs();
 });
-
